@@ -18,7 +18,7 @@ jobs:
       - name: Build Application
         run: mvn clean package -DskipTests
 
-      - name: Build Docker Images
+      - name: Build Docker Image
         run: docker build -t my-spring-app .
 
       - name: Login to Docker Hub
